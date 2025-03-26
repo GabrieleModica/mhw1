@@ -1,0 +1,428 @@
+﻿body {
+    background: #ffffff;
+    font-family: JETSansDigital, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+#feed{
+    position:fixed;
+    z-index: 100;
+ left:50%;
+ right:50%;
+ top :auto;
+ bottom:0;
+ padding:0;
+ margin:0;
+height: 4%;
+cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    
+}
+.logo {
+    height: 6vh;
+   width:auto;
+}
+
+.links {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #242e30;
+    padding: 6px 20px;
+    border-radius: 100px;
+    margin-left: auto;
+    
+}
+
+.links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.links img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+a:hover, #menù:hover {
+    background-color: #efeeee8b;
+    color: black;
+}
+
+header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    background-color: #f8f5f2;
+}
+
+.left, .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    flex-direction: column;
+    margin-left: 8%;
+    margin-top: 5%;
+    height: 70vh;
+}
+
+.right {
+    align-items: center;
+    background-color: #FF8000;
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.right img {
+    height: 60vh;
+   
+}
+
+h1 {
+    font-size: 7vh;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 4vh;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    background-color: #f8f5f2;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+   
+    background-color: #ffffff;
+    color: #666;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #FF8000;
+    color: white;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #e67300;
+}
+
+.how-to-order,.util {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.how-to-order {
+    background-color: #ffffff;
+}
+
+.how-to-order h2,.util h2 {
+    font-size: 3vh;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.how-to-order h1, .util h1 {
+    font-size:6vh;
+    color: #F36805;
+    margin: 10px 0;
+}
+
+#indicazioni {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.how-to-order .primo {
+    text-align: center;
+    width: 33vw;
+}
+
+.icon {
+    width: auto;
+    height: 10vh;
+    margin-bottom: 10px;
+}
+
+.primo h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.primo p {
+    font-size: 16px;
+    color: #666;
+}
+
+.app {
+    background-color: #c1dade;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 55vh;
+}
+
+.app .app-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 13%;
+}
+
+.app .app-left h2 {
+    font-size: 8vh;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.app .app-left p {
+    font-size: 3vh;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.app-store {
+    height: 7vh;
+}
+
+.app .app-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app .app-right img {
+    height: 90%;
+    position: absolute;
+    width: auto;
+    margin-top: 5vh;
+    margin-bottom: 0;
+}
+.util {
+    background-color: #f8f5f2;
+}
+.util .primo{
+    background-color: white; 
+   margin:20px;
+border-radius: 5%;
+padding:2%;
+width:33%
+}
+.util .primo p{
+   margin-left: 3vh;
+text-align: left;
+}
+footer {
+    background-color: #f9f8f6;
+    padding: 20px;
+    text-align: center;
+}
+.footer-container {
+    
+    margin: auto;
+}
+.footer-logo img {
+  height:8vh;
+}
+
+.footer-social   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}.footer-social a img {
+    height:6vh;
+
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+.footer-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer-bottom p, .footer-bottom a {
+    font-size: 14px;
+    color: #333;
+}
+.footer-bottom a {
+    
+    margin: 0 5px;
+}
+
+#seguici{
+    padding: 2%;
+}
+@media (max-width: 900px) {
+    .links a {
+        display: none;
+    }
+  .links{
+
+    padding:0;
+    margin:0;
+  }
+
+    
+    header {
+        flex-direction: column;
+        height: 100vh;
+     
+    }
+
+    
+
+    .right {
+        clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .right img {
+        height: 40vh;
+    }
+
+    .app {
+        flex-direction: row;
+        height: auto;
+      
+       padding:0;
+    }
+
+    .app .app-left {
+        align-items: center;
+        text-align: center;
+        margin: 0;
+       
+    }
+    .app .app-left h2{
+      font-size: 5vh;
+       
+    }
+    .app .app-left p{
+        font-size: 2vh;
+         
+      }
+    .app .app-right {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: right;
+      
+    }
+
+    .app .app-right img {
+        height: 30vh;
+        position:static;
+     margin-right: 5%;
+       
+    }
+
+    .app-buttons {
+        justify-content: left;
+       
+    }
+
+    .app-store {
+        height: 3vh;
+    }
+  
+    header .left h1 {
+        font-size: 6vh;
+      
+        text-align: center;
+     margin-right: 10%;
+    }
+
+    header .left h2 {
+        font-size: 3vh;
+        margin-right: 10%;
+        text-align: center;
+    }
+
+    .how-to-order {
+      margin-top: 5%;
+    }
+
+    .how-to-order h1 {
+        font-size: 28px;
+    }
+
+    .how-to-order h2 {
+        font-size: 20px;
+    }
+
+    #indicazioni {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .primo {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+   .util .primo,  .how-to-order .primo {    width: 100%;
+        margin: 10px 20px; 
+        padding: 20px 10px;
+    }
+
+    .util .primo p {
+        margin-left: 0; 
+        text-align: left; 
+        font-size: 14px; 
+    }
+
+.search-bar
+{
+    margin:auto;
+}
+.footer-links, .footer-bottom{
+
+flex-direction: column;
+        align-items: left;
+       text-align: start;
+}
+}
